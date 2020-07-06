@@ -15,8 +15,8 @@
 
 ## Installation
 ```
-pod install
 open *.xcworkspace
+run
 ```
 
 #### Manually
