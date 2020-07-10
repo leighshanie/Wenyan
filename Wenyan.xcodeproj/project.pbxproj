@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		BAAFF594248F3E1600B59377 /* NotoSerifTC-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BAAFF593248F3E1600B59377 /* NotoSerifTC-Bold.otf */; };
 		BAAFF596248F3E2300B59377 /* NotoSerifTC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BAAFF595248F3E2300B59377 /* NotoSerifTC-Regular.otf */; };
 		BAAFF5A72490E44000B59377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAFF5A62490E44000B59377 /* ViewController.swift */; };
+		BAE336B424B8E0C800E9C9F2 /* TextView in Frameworks */ = {isa = PBXBuildFile; productRef = BAE336B324B8E0C800E9C9F2 /* TextView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE336B424B8E0C800E9C9F2 /* TextView in Frameworks */,
 				5BF51D161C8452F05739A2B7 /* Pods_Wenyan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +164,9 @@
 			dependencies = (
 			);
 			name = Wenyan;
+			packageProductDependencies = (
+				BAE336B324B8E0C800E9C9F2 /* TextView */,
+			);
 			productName = Wenyan;
 			productReference = BAAFF569248C7FAE00B59377 /* Wenyan.app */;
 			productType = "com.apple.product-type.application";
@@ -190,6 +195,9 @@
 				Base,
 			);
 			mainGroup = BAAFF560248C7FAE00B59377;
+			packageReferences = (
+				BAE336B224B8E0C800E9C9F2 /* XCRemoteSwiftPackageReference "TextView" */,
+			);
 			productRefGroup = BAAFF56A248C7FAE00B59377 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -464,6 +472,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BAE336B224B8E0C800E9C9F2 /* XCRemoteSwiftPackageReference "TextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kenmueller/TextView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BAE336B324B8E0C800E9C9F2 /* TextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAE336B224B8E0C800E9C9F2 /* XCRemoteSwiftPackageReference "TextView" */;
+			productName = TextView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BAAFF561248C7FAE00B59377 /* Project object */;
 }
